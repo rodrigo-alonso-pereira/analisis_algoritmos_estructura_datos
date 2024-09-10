@@ -5,7 +5,7 @@ Repositorio de avances de la asignatura de Analisis de Algoritmos y Estructura d
 
 Utilizar git para poder clonar el repositorio, o de plano descargarlo.
 
-### Pre-requisitos 📋
+## Pre-requisitos 📋
 
 
 ## Contexto 💻
