@@ -39,7 +39,7 @@ int main(){ // argv[] son los argumentos que se pasan por consola y que se almac
 	int num = 45;
 	int resultado_iterativo = 0;
 	int resultado_recursivo = 0;
-	clock_t ciniIt, cfinIt, ciniRe, cfinRe; //clock_t es un tipo de dato que se utiliza para medir el tiempo de ejecución de un programa
+	clock_t ciniIt, cfinIt, ciniRe, cfinRe; //clock_t es un tipo de dato que se utiliza para medir el tiempo de ejecución de un programa.
 	
 	//num = atoi(argv[1]);
 
