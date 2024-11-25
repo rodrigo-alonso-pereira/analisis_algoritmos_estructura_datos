@@ -48,4 +48,4 @@ int cuenta_nodos(lista *l);
 int busca_dato(lista *l, int d);
 
 /*------------- actividad 4 -------------*/
-lista* invierte_orden(lista *l);
+//lista* invierte_orden(lista *l);

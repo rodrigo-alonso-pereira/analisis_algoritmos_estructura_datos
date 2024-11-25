@@ -61,6 +61,7 @@ void libera_lista(lista *l){
     free(l);
 	}
 
+// ACTIVIDAD 2
 int cuenta_nodos(lista *l) {
     int count = 0;
     nodo* ptr = l->inicio;
@@ -71,6 +72,7 @@ int cuenta_nodos(lista *l) {
     return count;
 }
 
+// ACTIVIDAD 3
 int busca_dato(lista *l, int d) {
     nodo* ptr = l->inicio;
     while (ptr != NULL) {
@@ -82,6 +84,7 @@ int busca_dato(lista *l, int d) {
     return 0;
 }
 
+/*
 lista* invierte_orden(lista* l) {
     nodo* ptr = l->inicio;
     while (ptr != NULL) {
@@ -93,4 +96,5 @@ lista* invierte_orden(lista* l) {
     }
     return l;
 }
+*/
 	
