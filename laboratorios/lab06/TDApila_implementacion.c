@@ -44,12 +44,12 @@ void desapilar(pila* p) {
 }
 
 int busca_dato_pila(pila* p, int d) {
-	pila* pila_aux = (pila*)malloc(sizeof(pila));
+	pila* pila_aux = nueva_pila();
 	int valor_tope;
 	int encontrado = 0;
 	while ((es_pila_vacia(p) == 0) && (!encontrado)) {
 		valor_tope = tope(p)->dato;
-		if (valor_tope = d) 
+		if (valor_tope == d) 
 			encontrado = 1;
 		apilar(pila_aux, valor_tope);
 		desapilar(p);
@@ -58,6 +58,9 @@ int busca_dato_pila(pila* p, int d) {
 		apilar(p, tope(pila_aux)->dato);
 		desapilar(pila_aux);
 	}
-	return encontrado;
+	return encontrado;	
+}
+
+void imprime_pila(pila *p) {
 	
 }

@@ -51,7 +51,7 @@ void desapilar(pila *p);
 
 // imprime_pila(p) imprime por consola los elementos de la pila p
 // orden de complejidad: O(n)
-//void imprime_pila(pila *p);
+void imprime_pila(pila *p);
 
 
 /*------------- Actividad 4 -------------*/
