@@ -36,12 +36,12 @@ void apilar(pila *p, int d);
 
 // tope(p) retorna la dirección del primer elemento de la lista p
 // orden de complejidad: O(1)
-//nodo* tope(pila *p);
+nodo* tope(pila *p);
 
 
 // desapilar(p) elimina el primer elemento de la pila p 
 // orden de complejidad: O(1)
-//void desapilar(pila *p);
+void desapilar(pila *p);
 
 
 
@@ -55,7 +55,7 @@ void apilar(pila *p, int d);
 
 
 /*------------- Actividad 4 -------------*/
-//int busca_dato_pila(pila *p, int d)
+int busca_dato_pila(pila *p, int d);
 
 
 
