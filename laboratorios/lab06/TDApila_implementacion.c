@@ -61,6 +61,6 @@ int busca_dato_pila(pila* p, int d) {
 	return encontrado;	
 }
 
-void imprime_pila(pila *p) {
+/*void imprime_pila(pila *p) {
 	
-}
+}*/
