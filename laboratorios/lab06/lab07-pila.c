@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
 	//desapilar(p);
 	//nodo* n2 = tope(p);
 	//printf("Tope %d\n", n2->dato);
-	int buscado = 1;
-	(busca_dato_pila(p, buscado) == 1) ? printf("Encontrado valor %d en pila", buscado) : printf("No encontrado valor %d en pila", buscado);
+	int buscado = 5;
+	(busca_dato_pila(p, buscado) == 1) ? printf("Encontrado valor %d en pila\n", buscado) : printf("No encontrado valor %d en pila\n", buscado);
 	return 0;
 }
