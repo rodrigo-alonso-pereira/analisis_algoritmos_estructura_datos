@@ -33,9 +33,21 @@ void inserta_inicio(lista *l, int d);
 // orden de complejidad: O(n)
 void inserta_final(lista *l, int d);
 
+// inserta_despues(l, d, anterior) inserta el dato d después del nodo con dato igual a anterior
+// orden de complejidad: O(n)
+void inserta_despues(lista *l, int d, int anterior);
+
 // elimina_inicio(l) elimina el primer elemento de la lista l 
 // orden de complejidad: O(1)
 void elimina_inicio(lista *l);
+
+// elimina_final(l) elimina el último elemento de la lista l
+// orden de complejidad: O(n)
+void elimina_final(lista *l);
+
+// elimina_nodo(l, d) elimina el nodo con dato igual a d de la lista l
+// orden de complejidad: O(n)
+void elimina_nodo(lista *l, int d);
 
 // imprime_lista(l) imprime por consola los elementos de la lista l
 // orden de complejidad: O(n)

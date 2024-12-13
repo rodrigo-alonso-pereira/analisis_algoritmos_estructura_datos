@@ -39,15 +39,48 @@ void inserta_final(lista *l, int d){
     final->siguiente = nuevo_nodo;
     }
 
+void inserta_despues(lista *l, int d, int anterior) {
+    nodo* ptr_anterior = l->inicio;
+    while (ptr_anterior->dato != anterior) {
+        ptr_anterior = ptr_anterior->siguiente;
+    }
+    nodo* nuevo_nodo = (nodo*)malloc(sizeof(nodo));
+    nuevo_nodo->dato = d;
+    nuevo_nodo->siguiente = ptr_anterior->siguiente;
+    ptr_anterior->siguiente = nuevo_nodo;
+}
+
 
 void elimina_inicio(lista *l){
     nodo *aux;
     if(!es_lista_vacia(l)){
         aux = l->inicio;
-        l->inicio = l->inicio->siguiente;
+        l->inicio = l->inicio->siguiente; //idem aux->siguiente
         free(aux);
         }
     }
+
+void elimina_final(lista *l) {
+    nodo* ptr_final = l->inicio;
+    nodo* ptr_anterior = NULL;
+    while (ptr_final->siguiente != NULL) {
+        ptr_anterior = ptr_final;
+        ptr_final = ptr_final->siguiente;
+    }
+    ptr_anterior->siguiente = NULL;
+    free(ptr_final);
+}
+
+void elimina_nodo(lista* l, int d) {
+    nodo* buscado = l->inicio;
+    nodo* anterior_buscado = NULL;
+    while (buscado->dato != d) {
+        anterior_buscado = buscado;
+        buscado = buscado->siguiente;
+    }
+    anterior_buscado->siguiente = buscado->siguiente;
+    free(buscado);
+}
 
 
 void imprime_lista(lista *l){
