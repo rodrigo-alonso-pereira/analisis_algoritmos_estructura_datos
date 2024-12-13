@@ -29,6 +29,10 @@ int main(){
     //6.- Mostrar la lista resultante
     imprime_lista(l);
 
+    //7.- Insertar al final nodo con valor 14
+    inserta_final(l, 14);
+    imprime_lista(l);
+
     // ACTIVIDAD 2
 
     //1.- Implementar una funcion que devuelve el numero de elementos de la lista. La funcion debe volver 0 en caso de que lista esta vacia

@@ -29,6 +29,10 @@ int es_lista_vacia(lista *l);
 // orden de complejidad: O(1)
 void inserta_inicio(lista *l, int d);
 
+// inserta_final(l, d) inserta el dato d al final de la lista l
+// orden de complejidad: O(n)
+void inserta_final(lista *l, int d);
+
 // elimina_inicio(l) elimina el primer elemento de la lista l 
 // orden de complejidad: O(1)
 void elimina_inicio(lista *l);

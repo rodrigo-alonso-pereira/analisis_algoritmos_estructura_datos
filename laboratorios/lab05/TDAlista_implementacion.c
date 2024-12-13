@@ -28,6 +28,17 @@ void inserta_inicio(lista *l, int d){
     l->inicio = nuevo_nodo;
     }
 
+void inserta_final(lista *l, int d){
+    nodo *final = l->inicio;
+    while (final->siguiente != NULL){
+        final = final->siguiente;
+    }
+    nodo *nuevo_nodo = (nodo*)malloc(sizeof(nodo));
+    nuevo_nodo->dato = d;
+    nuevo_nodo->siguiente = NULL;
+    final->siguiente = nuevo_nodo;
+    }
+
 
 void elimina_inicio(lista *l){
     nodo *aux;
