@@ -36,9 +36,10 @@ int pertenece(conjunto *c, int e){
 void imprime_conjunto(conjunto *c) {
     printf("\n Elementos: ");
     if (c->cardinalidad > 0){
-        for (int i = 0; i < c->cardinalidad; i++){
+        for (int i = 0; i < c->cardinalidad; i++) {
             printf("%d ", c->elementos[i]);   
             }
+        printf("\n");
         } 
 	else{ 
 		printf("%c", 155);
