@@ -11,6 +11,8 @@ int main(int argc, char *argv[]) {
 		printf("\n============\n");
 		}
 
+	printf("El grado es %d\n", obtiene_grado(g, 4));
+	(vertices_articulacion(g) == 0) ? printf("No es vértices de articulación\n") : printf("Es vértices de articulación\n");
 	return 0;
 	}
 

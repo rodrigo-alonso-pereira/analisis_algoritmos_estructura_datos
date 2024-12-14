@@ -88,3 +88,31 @@ int es_conexo(grafo *g){
     return 1;
 	}
 
+
+/*------------- Actividad 1 -------------*/
+int obtiene_grado(grafo *g, int vertice) {
+	int grado = 0, i = 1;
+	while (i <= g->cvertices) {
+		if (g->adyacencias[vertice][i] > 0) {
+			grado++;
+		}
+		i++;
+	}
+	return grado;
+}
+
+/*------------- Actividad 2 -------------*/
+int vertices_articulacion(grafo *g){
+	grafo* g_aux = g;
+	//int i = 0;
+	for (int i = 0; i < g_aux->cvertices; i++) {
+		g_aux->adyacencias[i][0] = 0;
+		g_aux->adyacencias[0][i] = 0;
+	}
+	imprime_matriz_grafo(g_aux);
+	if (es_conexo(g_aux) == 1) {
+		return 0;
+	} else {
+		return 1;
+	}
+}

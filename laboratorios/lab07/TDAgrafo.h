@@ -40,14 +40,13 @@ int es_conexo(grafo *g);
 
 
 /*------------- Actividad 1 -------------*/
-//int obtiene_grado(grafo *g, int vertice);
-
+int obtiene_grado(grafo *g, int vertice);
 
 
 
 
 /*------------- Actividad 2 -------------*/
-//vertices_articulacion(grafo *g)
+int vertices_articulacion(grafo *g);
 
 
 
