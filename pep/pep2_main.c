@@ -10,8 +10,8 @@ se encuentran en cualquiera de las dos listas, sin repetición.
 
 int main (int argc, char const *argv[]) {
 
-    grafo *g;
-	g = lee_grafo_nodirigido(argv[1]);
+    //grafo *g;
+	//g = lee_grafo_nodirigido(argv[1]);
 
     /*
     PROBLEMA 1 (20 puntos):
@@ -82,7 +82,7 @@ int main (int argc, char const *argv[]) {
     */
 
     pila *p = nueva_pila();	
-	apilar(p, 20);
+	//apilar(p, 20);
 	apilar(p, 6);
 	apilar(p, 22);
 	apilar(p, 12);
@@ -110,11 +110,11 @@ int main (int argc, char const *argv[]) {
     */
 
     
-	if (g != NULL){
+	/*if (g != NULL){
 		printf("Matriz de adyacencia: \n\n");
 		imprime_matriz_grafo(g);
 		printf("\n============\n");
-	}
+	}*/
    
 
 }
